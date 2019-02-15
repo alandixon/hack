@@ -1,5 +1,12 @@
 # hack
 
+## Locations
+| Page| Link | Notes |
+| --- |------|-------|
+| Hello world| https://alandixon.github.io/hack/html/HelloWorld.html | |
+| Loggly test | https://alandixon.github.io/hack/html/log/loggly/logglytest.html |  |
+
+
 ## Versions
 http://whatsmyos.com/
 
