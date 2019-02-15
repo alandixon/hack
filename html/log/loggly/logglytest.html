@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-	<title>Loggly test</title>
+	<title>Loggly</title>
 	<body>
 
-	Loggly test v 1.5
+	Loggly test v1.7
 
 		<script type="text/javascript" src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" async></script>
 		
@@ -12,24 +12,13 @@
 		  _LTracker.push({
 			'logglyKey': 'dbac1915-0979-42b7-a4b0-26992d04aa41',
 			'sendConsoleErrors' : true,
-			'tag' : 'loggly-jslogger,html,html_loggly_test, v1.5',
-			'text': 'My json object',
-			'aList': [9, 2, 5],
-			'anObject': {
-				'id': 1,
-				'value': 'foobar'
-			}
+			'tag' : 'loggly-jslogger' 
 		  });
 		</script>
 		
-		<!--script>
-			_LTracker.push('My Text msg');
-		</script-->
-		
-		<!--script>
-			var _LTracker = _LTracker || [];
+		<script>
 			_LTracker.push({
-				'tag' : 'loggly-jslogger,html,html_loggly_test'
+				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.7',
 				'text': 'My json object',
 				'aList': [9, 2, 5],
 				'anObject': {
@@ -37,7 +26,8 @@
 					'value': 'foobar'
 				}
 			});
-		</script-->
+		</script>
+
 		
 	</body>
 </html>
