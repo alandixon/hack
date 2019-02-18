@@ -1,9 +1,26 @@
 <!DOCTYPE HTML>
 <html>
-	<title>Loggly</title>
+	<title>Loggly</title>	
+	
+	<head>
+	  <meta charset="utf-8" />
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+	  <script type="text/javascript">
+	    // From https://stackoverflow.com/questions/252665/i-need-to-get-all-the-cookies-from-the-browser/252959#252959
+		var getCookies = function(){
+		  var pairs = document.cookie.split(";");
+		  var cookies = {};
+		  for (var i=0; i<pairs.length; i++){
+			var pair = pairs[i].split("=");
+			cookies[(pair[0]+'').trim()] = unescape(pair[1]);
+		  };
+		  return cookies;
+		};
+	  </script>
+	</head>	
+	
 	<body>
-
-	Loggly test v1.7
+	Loggly test v1.12
 
 		<script type="text/javascript" src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" async></script>
 		
@@ -16,18 +33,19 @@
 		  });
 		</script>
 		
-		<script>
+		<script type="text/javascript">
 			_LTracker.push({
-				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.7',
+				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.12',
 				'text': 'My json object',
+				'cookies': getCookies(),
 				'aList': [9, 2, 5],
 				'anObject': {
 					'id': 1,
-					'value': 'foobar'
+					'value': "bla"
 				}
 			});
 		</script>
-
 		
 	</body>
+	
 </html>
