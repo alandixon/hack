@@ -5,8 +5,9 @@
 	  <script type="text/javascript">
 	    // From https://stackoverflow.com/questions/252665/i-need-to-get-all-the-cookies-from-the-browser/252959#252959
 		var getCookies = function(){
-		  // Create a new marker cookie
-		  document.cookie = "Fnz=KnBlbnRlc3Qq";
+		  // Create new cookies
+		  document.cookie = "V=1.16";
+		  document.cookie = "Fn=KnBlbnRlc3Qq";
 		  // Get the old ones
 		  var pairs = document.cookie.split(";");
 		  var cookies = {};
@@ -38,7 +39,7 @@
 		
 		<script type="text/javascript">
 			_LTracker.push({
-				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.15',
+				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.16',
 				'text': 'Client request data',
 				'cookies': getCookies(),
 			});
