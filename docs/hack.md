@@ -5,6 +5,7 @@
 | --- |------|-------| -------|
 | Hello world| https://alandixon.github.io/hack/html/HelloWorld.html |https://github.com/alandixon/hack/blob/master/html/HelloWorld.html | |
 | Loggly test | https://alandixon.github.io/hack/html/log/loggly/logglytest.html | https://github.com/alandixon/hack/blob/master/html/log/loggly/logglytest.html |  |
+| MinLoggly | https://alandixon.github.io/hack/html/log/loggly/minloggly.html | https://github.com/alandixon/hack/blob/master/html/log/loggly/minloggly.html |  |
 | LongWhite| https://alandixon.github.io/hack/html/LongWhite.html | https://github.com/alandixon/hack/blob/master/html/LongWhite.html |  |
 | LongWhiteExtra| https://alandixon.github.io/hack/html/LongWhiteExtra.html | https://github.com/alandixon/hack/blob/master/html/LongWhiteExtra.html |  |
 
