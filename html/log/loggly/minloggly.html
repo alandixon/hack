@@ -7,12 +7,12 @@
 	<body>
 <!-- Note: leave the next line in -->	
 !
-		<script type="text/javascript">
+		<!--script type="text/javascript">
 			_LTracker.push({
 				'tag' : 'html_loggly_test,v1.18',
 				'text': 'Client request data'
 			});
-		</script>
+		</script-->
 
 		<script type="text/javascript" src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" async></script>
 		<script>
@@ -21,6 +21,11 @@
 			'logglyKey': 'dbac1915-0979-42b7-a4b0-26992d04aa41',
 			'sendConsoleErrors' : true,
 			'tag' : 'loggly-initialise' 
+			'text': 'Client request data',
+			'objA': {
+				'id': 1,
+				'value': 'foobar'
+			}
 		  });
 		</script>
 
