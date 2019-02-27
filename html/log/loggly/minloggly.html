@@ -5,23 +5,23 @@
 	</head>	
 	
 	<body>
-<!-- Note: the next fullstop is needed otherwise loggly doesn't get the message !?-->	
+<!-- Note: leave the fullstop in -->	
 .
+		_LTracker.push({
+			'tag' : 'html_loggly_test,v1.17',
+			'text': 'Client request data'
+			}
+		});
+
 		<script type="text/javascript" src="https://cloudfront.loggly.com/js/loggly.tracker-latest.min.js" async></script>
-		
 		<script>
 		  var _LTracker = _LTracker || [];
 		  _LTracker.push({
 			'logglyKey': 'dbac1915-0979-42b7-a4b0-26992d04aa41',
-			'sendConsoleErrors' : true
-			});
+			'sendConsoleErrors' : true,
+			'tag' : 'loggly-initialise' 
+		  });
 		</script>
-		
-		<script type="text/javascript">
-			_LTracker.push({
-				'tag' : 'loggly-jslogger,html,html_loggly_test,v1.17',
-				'text': 'Client request data'
-			});
-		</script>
+
 	</body>
 </html>
