@@ -5,6 +5,8 @@
 | --- |------|-------|
 | Hello world| https://alandixon.github.io/hack/html/HelloWorld.html | |
 | Loggly test | https://alandixon.github.io/hack/html/log/loggly/logglytest.html |  |
+| LongWhite| https://alandixon.github.io/hack/html/LongWhite.html | |
+| LongWhiteExtra| https://alandixon.github.io/hack/html/LongWhiteExtra.html | |
 
 
 ## Versions
